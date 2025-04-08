@@ -61,6 +61,6 @@ export function useLink({
             tabIndex: disabled ? -1 : undefined,
             target: target ?? (external ? "_blank" : undefined)
         },
-        showNewTabIndicator: target === "_blank"
+        showNewTabIndicator: target === "_blank" || external
     };
 }

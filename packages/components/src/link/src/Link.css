@@ -327,3 +327,8 @@ button.o-ui-link-hover {
     border-radius: var(--hop-shape-rounded-sm);
     display: inline-flex;
 }
+
+/* NEW TAB INDICATOR */
+.o-ui-new-tab-indicator {
+    user-select: none;
+}
