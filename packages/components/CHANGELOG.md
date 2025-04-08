@@ -1,5 +1,11 @@
 # @workleap/orbiter-ui
 
+## 5.6.10
+
+### Patch Changes
+
+- 119728e: Fix some issues with the NewTabIndicator, we should show it when a link is external and user-select should always be none.
+
 ## 5.6.9
 
 ### Patch Changes
