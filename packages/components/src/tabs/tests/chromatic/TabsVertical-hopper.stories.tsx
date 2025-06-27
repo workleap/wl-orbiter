@@ -4,7 +4,7 @@ import { Inline } from "@components/layout/index.ts";
 import { Tabs } from "@components/tabs/index.ts";
 
 import { Item } from "@components/collection/index.ts";
-import { Text, Tag, TagGroup } from "@hopper-ui/components";
+import { Text, Tag } from "@hopper-ui/components";
 import { Meta, StoryObj } from "@storybook/react";
 
 const meta = {

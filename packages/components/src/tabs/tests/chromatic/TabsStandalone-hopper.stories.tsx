@@ -4,7 +4,7 @@ import { Content, Header } from "@components/placeholders/index.ts";
 import { Item } from "@components/collection/index.ts";
 import { Div } from "@components/html/index.ts";
 import { Stack } from "@components/layout/index.ts";
-import { Text, Tag, TagGroup } from "@hopper-ui/components";
+import { Text, Tag } from "@hopper-ui/components";
 
 import { Meta, StoryObj } from "@storybook/react";
 
