@@ -3,7 +3,9 @@ import { withBackgroundMatchingColorScheme, withCenteredCanvas, ThemedDocsContai
 import { Themes } from "./styles/themes.ts";
 import { formatCode } from "./components/snippet/index.ts";
 import type { Preview } from "@storybook/react";
-import "./styles/index.ts";
+import "./styles/app.css";
+import "./styles/docs.css";
+import "./styles/stories.css";
 
 import "@components/index.css";
 import "@hopper-ui/tokens/fonts.css";
