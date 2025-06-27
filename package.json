@@ -116,5 +116,10 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "pnpm": {
+    "overrides": {
+        "@hopper-ui/icons": "2.8.2"
+    }
   }
 }
