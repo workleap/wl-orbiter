@@ -23,6 +23,7 @@ export default meta;
 
 type TabsStory = StoryObj<typeof meta>;
 
+// TODO: Hopper should support slots props for Tags
 const Lozenge = slot("lozenge", Tag);
 
 export const Default: TabsStory = {
