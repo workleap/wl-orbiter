@@ -6,7 +6,6 @@ import { Tabs } from "@components/tabs/index.ts";
 import { Item } from "@components/collection/index.ts";
 import { Text, Tag } from "@hopper-ui/components";
 import { Meta, StoryObj } from "@storybook/react";
-import { slot } from "@components/shared/index.ts";
 
 const meta = {
     title: "Chromatic/Tabs-hopper/vertical",
