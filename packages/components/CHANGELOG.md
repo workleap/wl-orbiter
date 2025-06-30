@@ -1,5 +1,12 @@
 # @workleap/orbiter-ui
 
+## 5.6.11
+
+### Patch Changes
+
+- c70d8bd: Update colors for button upsell
+- a239151: Fix fields to prevent conflict between focus and hover state
+
 ## 5.6.10
 
 ### Patch Changes
