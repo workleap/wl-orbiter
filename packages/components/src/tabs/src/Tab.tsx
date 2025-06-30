@@ -59,6 +59,13 @@ export function InnerTab({
             size: "sm",
             variant: "informative"
         },
+        tag: { // Lozenge is not available in hopper, we use tag instead
+            "aria-hidden": true,
+            className: "o-ui-tab-lozenge",
+            highlight: true,
+            size: "sm",
+            variant: "informative"
+        },
         text: {
             className: "o-ui-tab-text",
             size: variant === "heading" ? "md" : "sm"

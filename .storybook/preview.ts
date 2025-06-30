@@ -3,8 +3,7 @@ import { withBackgroundMatchingColorScheme, withCenteredCanvas, ThemedDocsContai
 import { Themes } from "./styles/themes.ts";
 import { formatCode } from "./components/snippet/index.ts";
 import type { Preview } from "@storybook/react";
-import "./styles/index.ts";
-
+import "./styles/index.css";
 import "@components/index.css";
 import "@hopper-ui/tokens/fonts.css";
 
