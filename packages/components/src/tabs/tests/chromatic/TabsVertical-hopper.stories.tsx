@@ -22,9 +22,6 @@ export default meta;
 
 type TabsStory = StoryObj<typeof meta>;
 
-// TODO: Hopper should support slots props for Tags
-const Lozenge = slot("lozenge", Tag);
-
 export const Default: TabsStory = {
     name: "default",
     render: () => (
@@ -91,7 +88,7 @@ export const TabWithLozenge: TabsStory = {
             <Item>
                 <Header>
                     <Text>Mars</Text>
-                    <Lozenge>New</Lozenge>
+                    <Tag>New</Tag>
                 </Header>
                 <Content>Mars is the fourth planet from the Sun and the second-smallest planet.</Content>
             </Item>
@@ -99,7 +96,7 @@ export const TabWithLozenge: TabsStory = {
                 <Header>
                     <NotificationIcon />
                     <Text>Jupiter</Text>
-                    <Lozenge>New</Lozenge>
+                    <Tag>New</Tag>
                 </Header>
                 <Content>Jupiter is the fifth planet from the Sun and the largest in the Solar System.</Content>
             </Item>

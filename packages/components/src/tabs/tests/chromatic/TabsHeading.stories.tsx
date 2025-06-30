@@ -185,7 +185,7 @@ export const TabWithLozenge: TabsStory = {
             <Item>
                 <Header>
                     <Text>Mars</Text>
-                    <Lozenge>New</Lozenge>
+                    <Tag>New</Tag>
                 </Header>
                 <Content>Mars is the fourth planet from the Sun and the second-smallest planet.</Content>
             </Item>
@@ -193,7 +193,7 @@ export const TabWithLozenge: TabsStory = {
                 <Header>
                     <NotificationIcon />
                     <Text>Jupiter</Text>
-                    <Lozenge>New</Lozenge>
+                    <Tag>New</Tag>
                 </Header>
                 <Content>Jupiter is the fifth planet from the Sun and the largest in the Solar System.</Content>
             </Item>
@@ -379,7 +379,7 @@ export const Overflow: TabsStory = {
                 <Item key="earth">
                     <Header>
                         <Text>Earth</Text>
-                        <Lozenge>Home</Lozenge>
+                        <Tag>Home</Tag>
                     </Header>
                     <Content>Earth—our home planet—is the only place we know of so far that’s inhabited by living things. It's also the only planet in our solar system with liquid water on the surface.</Content>
                 </Item>
@@ -401,7 +401,7 @@ export const Overflow: TabsStory = {
                     <Header>
                         <NotificationIcon />
                         <Text>Neptune</Text>
-                        <Lozenge>New</Lozenge>
+                        <Tag>New</Tag>
                     </Header>
                     <Content>Neptune—the eighth and most distant major planet orbitering our Sun—is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations, rather than by telescope.</Content>
                 </Item>
@@ -430,7 +430,7 @@ export const OverflowFluid: TabsStory = {
                 <Item key="earth">
                     <Header>
                         <Text>Earth</Text>
-                        <Lozenge>Home</Lozenge>
+                        <Tag>Home</Tag>
                     </Header>
                     <Content>Earth—our home planet—is the only place we know of so far that’s inhabited by living things. It's also the only planet in our solar system with liquid water on the surface.</Content>
                 </Item>
@@ -471,7 +471,7 @@ export const OverflowNotCollapsible: TabsStory = {
                 <Item key="earth">
                     <Header>
                         <Text>Earth</Text>
-                        <Lozenge>Home</Lozenge>
+                        <Tag>Home</Tag>
                     </Header>
                     <Content>Earth—our home planet—is the only place we know of so far that’s inhabited by living things. It's also the only planet in our solar system with liquid water on the surface.</Content>
                 </Item>
