@@ -88,7 +88,7 @@ export const TabWithLozenge: TabsStory = {
             <Item>
                 <Header>
                     <Text>Mars</Text>
-                    <Tag>New</Tag>
+                    <Lozenge>New</Lozenge>
                 </Header>
                 <Content>Mars is the fourth planet from the Sun and the second-smallest planet.</Content>
             </Item>
@@ -96,7 +96,7 @@ export const TabWithLozenge: TabsStory = {
                 <Header>
                     <NotificationIcon />
                     <Text>Jupiter</Text>
-                    <Tag>New</Tag>
+                    <Lozenge>New</Lozenge>
                 </Header>
                 <Content>Jupiter is the fifth planet from the Sun and the largest in the Solar System.</Content>
             </Item>

@@ -7,7 +7,6 @@ import { Stack } from "@components/layout/index.ts";
 import { Text, Tag } from "@hopper-ui/components";
 
 import { Meta, StoryObj } from "@storybook/react";
-import { slot } from "@components/shared/index.ts";
 
 const meta = {
     title: "Chromatic/Tabs-hopper/heading",
