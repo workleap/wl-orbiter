@@ -162,6 +162,14 @@
     padding-right: 0;
 }
 
+/* STATES | HOVER */
+.o-ui-input:not(.o-ui-input-disabled):hover,
+.o-ui-input:hover textarea:not(:disabled),
+.o-ui-input-hover:not(.o-ui-input-disabled):not(.o-ui-has-button-disabled) {
+    --o-ui-input-border-color: var(--hop-neutral-border-hover);
+    --o-ui-input-background-color: var(--hop-neutral-surface-hover);
+}
+
 /* STATES */
 /* STATES | FOCUS */
 .o-ui-text-input:not(.o-ui-input-disabled).o-ui-input-has-focus,
@@ -180,14 +188,6 @@
 .o-ui-input-focus:not(.o-ui-input-disabled):not(.o-ui-has-button-disabled):hover,
 .o-ui-input-focus:not(.o-ui-input-disabled):not(.o-ui-has-button-disabled).o-ui-input-hover {
     --o-ui-input-border-color: var(--hop-primary-border-focus);
-}
-
-/* STATES | HOVER */
-.o-ui-input:not(.o-ui-input-disabled):hover,
-.o-ui-input:hover textarea:not(:disabled),
-.o-ui-input-hover:not(.o-ui-input-disabled):not(.o-ui-has-button-disabled) {
-    --o-ui-input-border-color: var(--hop-neutral-border-hover);
-    --o-ui-input-background-color: var(--hop-neutral-surface-hover);
 }
 
 /* STATES | DISABLED */
