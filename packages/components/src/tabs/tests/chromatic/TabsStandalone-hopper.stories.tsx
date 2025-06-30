@@ -4,7 +4,7 @@ import { Content, Header } from "@components/placeholders/index.ts";
 import { Item } from "@components/collection/index.ts";
 import { Div } from "@components/html/index.ts";
 import { Stack } from "@components/layout/index.ts";
-import { Text, Tag } from "@hopper-ui/components";
+import { Text, Tag, slot } from "@hopper-ui/components";
 
 import { Meta, StoryObj } from "@storybook/react";
 
@@ -21,6 +21,9 @@ const meta = {
 export default meta;
 
 type TabsStory = StoryObj<typeof meta>;
+
+// TODO: Hopper should support slots props for Tags
+const Lozenge = slot("lozenge", Tag);
 
 export const Default: TabsStory = {
     name: "default",
@@ -184,7 +187,7 @@ export const TabWithLozenge: TabsStory = {
             <Item>
                 <Header>
                     <Text>Mars</Text>
-                    <Tag slot="lozenge">New</Tag>
+                    <Lozenge>New</Lozenge>
                 </Header>
                 <Content>Mars is the fourth planet from the Sun and the second-smallest planet.</Content>
             </Item>
@@ -192,7 +195,7 @@ export const TabWithLozenge: TabsStory = {
                 <Header>
                     <NotificationIcon />
                     <Text>Jupiter</Text>
-                    <Tag slot="lozenge">New</Tag>
+                    <Lozenge>New</Lozenge>
                 </Header>
                 <Content>Jupiter is the fifth planet from the Sun and the largest in the Solar System.</Content>
             </Item>
@@ -378,7 +381,7 @@ export const Overflow: TabsStory = {
                 <Item key="earth">
                     <Header>
                         <Text>Earth</Text>
-                        <Tag slot="lozenge">Home</Tag>
+                        <Lozenge>Home</Lozenge>
                     </Header>
                     <Content>Earth—our home planet—is the only place we know of so far that’s inhabited by living things. It's also the only planet in our solar system with liquid water on the surface.</Content>
                 </Item>
@@ -400,7 +403,7 @@ export const Overflow: TabsStory = {
                     <Header>
                         <NotificationIcon />
                         <Text>Neptune</Text>
-                        <Tag slot="lozenge">New</Tag>
+                        <Lozenge>New</Lozenge>
                     </Header>
                     <Content>Neptune—the eighth and most distant major planet orbitering our Sun—is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations, rather than by telescope.</Content>
                 </Item>
@@ -429,7 +432,7 @@ export const OverflowFluid: TabsStory = {
                 <Item key="earth">
                     <Header>
                         <Text>Earth</Text>
-                        <Tag slot="lozenge">Home</Tag>
+                        <Lozenge>Home</Lozenge>
                     </Header>
                     <Content>Earth—our home planet—is the only place we know of so far that’s inhabited by living things. It's also the only planet in our solar system with liquid water on the surface.</Content>
                 </Item>
@@ -470,7 +473,7 @@ export const OverflowNotCollapsible: TabsStory = {
                 <Item key="earth">
                     <Header>
                         <Text>Earth</Text>
-                        <Tag slot="lozenge">Home</Tag>
+                        <Lozenge>Home</Lozenge>
                     </Header>
                     <Content>Earth—our home planet—is the only place we know of so far that’s inhabited by living things. It's also the only planet in our solar system with liquid water on the surface.</Content>
                 </Item>

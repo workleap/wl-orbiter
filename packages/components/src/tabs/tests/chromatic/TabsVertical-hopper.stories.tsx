@@ -6,6 +6,7 @@ import { Tabs } from "@components/tabs/index.ts";
 import { Item } from "@components/collection/index.ts";
 import { Text, Tag } from "@hopper-ui/components";
 import { Meta, StoryObj } from "@storybook/react";
+import { slot } from "@components/shared/index.ts";
 
 const meta = {
     title: "Chromatic/Tabs-hopper/vertical",
@@ -20,6 +21,9 @@ const meta = {
 export default meta;
 
 type TabsStory = StoryObj<typeof meta>;
+
+// TODO: Hopper should support slots props for Tags
+const Lozenge = slot("lozenge", Tag);
 
 export const Default: TabsStory = {
     name: "default",
@@ -87,7 +91,7 @@ export const TabWithLozenge: TabsStory = {
             <Item>
                 <Header>
                     <Text>Mars</Text>
-                    <Tag slot="lozenge">New</Tag>
+                    <Lozenge>New</Lozenge>
                 </Header>
                 <Content>Mars is the fourth planet from the Sun and the second-smallest planet.</Content>
             </Item>
@@ -95,7 +99,7 @@ export const TabWithLozenge: TabsStory = {
                 <Header>
                     <NotificationIcon />
                     <Text>Jupiter</Text>
-                    <Tag slot="lozenge">New</Tag>
+                    <Lozenge>New</Lozenge>
                 </Header>
                 <Content>Jupiter is the fifth planet from the Sun and the largest in the Solar System.</Content>
             </Item>
