@@ -1,5 +1,11 @@
 # @workleap/orbiter-ui
 
+## 5.6.12
+
+### Patch Changes
+
+- c90cd1a: Bump to test OIDC publish
+
 ## 5.6.11
 
 ### Patch Changes
