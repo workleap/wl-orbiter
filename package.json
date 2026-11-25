@@ -22,7 +22,7 @@
     "clean": "pnpm run \"/^clean:.*/\"",
     "clean:pkg": "pnpm run --parallel -r clean",
     "clean:sb": "rimraf storybook-static",
-    "reset": "pnpm clean && node -e \"['node_modules', 'pnpm-lock.yaml'].forEach(x => fs.rmSync(x, { recursive: true, force: true }))\"",
+    "reset": "pnpm clean && pnpm dlx rimraf node_modules pnpm-lock.yaml",
     "lint": "pnpm run \"/^lint:.*/\"",
     "lint:eslint": "eslint --ext .js,.jsx,.ts,.tsx,.mdx . --cache --cache-location node_modules/.cache/.eslintcache",
     "lint:style": "stylelint \"**/*.css\" --allow-empty-input --cache",

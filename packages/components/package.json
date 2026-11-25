@@ -75,9 +75,8 @@
         "provenance": true
     },
     "scripts": {
-        "prebuild": "pnpm clean",
         "build": "tsup --config ./tsup.build.ts",
-        "clean": "node -e \"fs.rmSync('dist', { recursive: true, force: true })\"",
+        "clean": "pnpm dlx rimraf dist",
         "test": "jest"
     },
     "peerDependencies": {
