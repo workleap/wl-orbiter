@@ -6,7 +6,6 @@
   "type": "module",
   "license": "Apache-2.0",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "start": "pnpm run start:pkg && pnpm run start:sb",
     "start:pkg": "pnpm -r --parallel run start",
     "start:sb": "storybook dev -p 9009",

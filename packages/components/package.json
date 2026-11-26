@@ -75,7 +75,6 @@
         "provenance": true
     },
     "scripts": {
-        "prebuild": "pnpm clean",
         "build": "tsup --config ./tsup.build.ts",
         "clean": "pnpm dlx rimraf dist",
         "test": "jest"
