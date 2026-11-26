@@ -8,6 +8,9 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    # The npm-publish environment only accepts the master branch, and the npm trusted publisher of
+    # @workleap/orbiter-ui requires it: a workflow run from another branch cannot publish.
+    environment: npm-publish
     permissions:
       id-token: write # OIDC for npm Trusted Publishing
       contents: write

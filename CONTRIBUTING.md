@@ -96,6 +96,13 @@ When you are ready to release the packages, you must follow the following steps:
 4. Create a new Github release associated to the tag created previously
 5. Optionally deploy Storybook and the document Website
 
+### Publishing environment
+
+The `release` job of the [Changeset](./.github/workflows/changeset.yml) workflow publishes `@workleap/orbiter-ui` with npm Trusted Publishing. It runs in the `npm-publish` GitHub environment, which only accepts the `master` branch and has no reviewer. The npm trusted publisher of the package requires that environment, so a workflow run from another branch cannot publish. This depends on two settings that are not in the repository:
+
+- The `npm-publish` environment exists in the repository settings, with `master` as its only deployment branch. GitHub creates a missing environment without any protection.
+- On npm, the trusted publisher of `@workleap/orbiter-ui` names the `changeset.yml` workflow and the `npm-publish` environment. Never rename the workflow file or the environment: the publish stops until npm is updated.
+
 ### Alpha release
 
 Sometimes it's useful to publish an alpha version to test the packages installation or share a preview.
