@@ -82,9 +82,9 @@
     "peerDependencies": {
         "@hopper-ui/components": "*",
         "@hopper-ui/styled-system": "*",
-        "react": "^18.0.0",
+        "react": "^18.0.0 || ^19.0.0",
         "react-aria-components": "*",
-        "react-dom": "^18.0.0"
+        "react-dom": "^18.0.0 || ^19.0.0"
     },
     "dependencies": {
         "@hopper-ui/icons": "2.8.2",
