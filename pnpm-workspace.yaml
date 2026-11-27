@@ -4,3 +4,5 @@ packages:
 minimumReleaseAge: 10080
 minimumReleaseAgeExclude:
   - "@workleap*"
+  # Renovate security update: svgo@3.3.5
+  - svgo@3.3.5
