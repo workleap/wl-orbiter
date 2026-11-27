@@ -121,5 +121,5 @@
         "@hopper-ui/icons": "2.8.2"
     }
   },
-  "packageManager": "pnpm@10.19.0"
+  "packageManager": "pnpm@12.22.0"
 }
