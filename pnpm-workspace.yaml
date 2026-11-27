@@ -4,3 +4,5 @@ packages:
 minimumReleaseAge: 10080
 minimumReleaseAgeExclude:
   - "@workleap*"
+  # Renovate security update: storybook@8.6.19
+  - storybook@8.6.19
